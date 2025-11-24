@@ -87,18 +87,9 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight max-w-4xl leading-tight"
+                    className="text-2xl font-semibold tracking-tight text-center mb-4 text-black max-w-2xl"
                 >
-                    Você merece aprender inglês de forma{" "}
-                    <motion.span
-                        className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500"
-                        animate={{
-                            backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                        }}
-                        transition={{ duration: 5, repeat: Infinity }}
-                    >
-                        prática e sem estresse
-                    </motion.span>
+                    Aprenda inglês no seu tempo: prático, divertido e guiado por IA.
                 </motion.h1>
 
                 {/* Subheadline */}
@@ -106,9 +97,10 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className="text-lg md:text-xl text-gray-600 max-w-2xl mb-10 leading-relaxed font-normal"
+                    className="text-sm text-center leading-relaxed mb-8 max-w-xs mx-auto"
+                    style={{ color: '#666666' }}
                 >
-                    Com Fluent Now, falar inglês se torna fácil e prático! Aprenda e pratique diariamente com o suporte de inteligência artificial.
+                    Complete um quiz rápido e desbloqueie 7 dias de acesso total ao Fluent Now — converse com agentes de IA, revise conteúdo e conquiste recompensas, mesmo com uma rotina corrida.
                 </motion.p>
 
                 {/* CTA Buttons with Hover Animations */}
@@ -116,30 +108,18 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
-                    className="flex flex-col sm:flex-row gap-4"
+                    className="flex flex-col sm:flex-row gap-4 w-full max-w-md mx-auto"
                 >
-                    <Link href="/onboarding">
+                    <Link href="/onboarding" className="w-full">
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="group relative px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition-shadow"
+                            className="group relative w-full px-8 py-4 rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition-shadow font-medium"
+                            style={{ backgroundColor: '#FFD700', color: '#000000' }}
                         >
-                            <motion.div
-                                className="absolute inset-0 bg-gradient-to-r from-orange-500 to-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                            />
-                            <span className="relative z-10 flex items-center gap-2">
-                                Comece sua jornada! <ArrowRight className="w-5 h-5" />
+                            <span className="relative z-10 flex items-center justify-center gap-2">
+                                Comece agora: faça o quiz e ative seu teste grátis <ArrowRight className="w-5 h-5" />
                             </span>
-                        </motion.button>
-                    </Link>
-
-                    <Link href="#como-funciona">
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="px-8 py-4 bg-white text-gray-900 font-medium rounded-full border-2 border-gray-200 hover:border-yellow-400 transition-colors shadow-lg"
-                        >
-                            Saiba Mais
                         </motion.button>
                     </Link>
                 </motion.div>

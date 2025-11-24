@@ -6,6 +6,8 @@ type UserPreferences = {
     goal: string;
     level: string;
     time: string;
+    obstacle?: string;
+    learningStyle?: string;
 };
 
 type UserProgress = {
@@ -14,6 +16,7 @@ type UserProgress = {
     accuracy: number;
     xp: number;
     lessonsCompleted: number;
+    points: number; // Gamification points
 };
 
 type UserContextType = {
@@ -21,6 +24,7 @@ type UserContextType = {
     progress: UserProgress;
     setPreferences: (prefs: UserPreferences) => void;
     updateProgress: (newProgress: Partial<UserProgress>) => void;
+    addPoints: (points: number) => void;
     hasCompletedOnboarding: boolean;
     completeOnboarding: () => void;
 };
@@ -29,6 +33,8 @@ const defaultPreferences: UserPreferences = {
     goal: "",
     level: "",
     time: "",
+    obstacle: "",
+    learningStyle: "",
 };
 
 const defaultProgress: UserProgress = {
@@ -37,6 +43,7 @@ const defaultProgress: UserProgress = {
     accuracy: 0,
     xp: 0,
     lessonsCompleted: 0,
+    points: 0,
 };
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
@@ -81,6 +88,10 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
         setProgressState(prev => ({ ...prev, ...newProgress }));
     };
 
+    const addPoints = (points: number) => {
+        setProgressState(prev => ({ ...prev, points: prev.points + points }));
+    };
+
     const completeOnboarding = () => {
         setHasCompletedOnboarding(true);
         localStorage.setItem("fluent_onboarding_complete", "true");
@@ -92,6 +103,7 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
             progress,
             setPreferences,
             updateProgress,
+            addPoints,
             hasCompletedOnboarding,
             completeOnboarding
         }}>
@@ -107,3 +119,4 @@ export function useUser() {
     }
     return context;
 }
+

@@ -8,11 +8,17 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                brand: {
-                    yellow: "#FFD700", // Adjust based on image if needed, standard gold/yellow
-                    black: "#000000",
-                    white: "#FFFFFF",
-                },
+                // B&W+Yellow Design System
+                bg: "#FFFFFF",
+                text: "#000000",
+                textSecondary: "#666666",
+                border: "#E5E5E5",
+                brand: "#FFD700",
+                surface: "#FAFAFA",
+                // Legacy colors (keep for compatibility)
+                "brand-yellow": "#FFD700",
+                "brand-black": "#000000",
+                "brand-white": "#FFFFFF",
             },
             fontFamily: {
                 sans: ['var(--font-inter)'],
@@ -22,3 +28,4 @@ const config: Config = {
     plugins: [],
 };
 export default config;
+
