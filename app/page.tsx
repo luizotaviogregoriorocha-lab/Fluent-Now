@@ -1,15 +1,17 @@
 import Hero from "@/components/landing/Hero";
-import Features from "@/components/landing/Features";
+import VisualFeatures from "@/components/landing/VisualFeatures";
 import HowItWorks from "@/components/landing/HowItWorks";
+import Stats from "@/components/landing/Stats";
 import FAQ from "@/components/landing/FAQ";
 import CTA from "@/components/landing/CTA";
 import Footer from "@/components/landing/Footer";
 
 export default function Home() {
     return (
-        <main className="min-h-screen bg-black text-white selection:bg-yellow-500/30">
+        <main className="min-h-screen bg-white text-black selection:bg-yellow-500/30">
             <Hero />
-            <Features />
+            <Stats />
+            <VisualFeatures />
             <HowItWorks />
             <FAQ />
             <CTA />
