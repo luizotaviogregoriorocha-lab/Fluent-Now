@@ -66,23 +66,7 @@ export default function Hero() {
                         animate={{ y: [0, -10, 0] }}
                         transition={{
                             duration: 3,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                        }}
-                    >
-                        <Image
-                            src="/logo-hero.png"
-                            alt="Fluent Now Logo"
-                            fill
-                            className="object-contain drop-shadow-2xl"
-                            priority
-                        />
-                    </motion.div>
-                </motion.div>
-
-                {/* Headline with Stagger Animation */}
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight max-w-4xl leading-tight"
