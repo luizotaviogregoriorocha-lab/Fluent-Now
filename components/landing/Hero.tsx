@@ -50,7 +50,7 @@ export default function Hero() {
                     <span className="text-sm font-medium text-gray-700">Fluent Now, seu inglês floresce aqui!</span>
                 </motion.div>
 
-                {/* Main Logo with Bounce Animation */}
+                {/* Main Logo with Bounce Animation - ABOVE TITLE */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -60,7 +60,7 @@ export default function Hero() {
                         type: "spring",
                         stiffness: 100
                     }}
-                    className="mb-8 relative w-80 h-40 md:w-[500px] md:h-52"
+                    className="mb-12 relative w-80 h-40 md:w-[500px] md:h-52"
                 >
                     <motion.div
                         animate={{ y: [0, -10, 0] }}
@@ -85,7 +85,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight max-w-4xl"
+                    className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight max-w-4xl leading-tight"
                 >
                     Você merece aprender inglês de forma{" "}
                     <motion.span
@@ -104,7 +104,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className="text-lg md:text-xl text-gray-600 max-w-2xl mb-10 leading-relaxed"
+                    className="text-lg md:text-xl text-gray-600 max-w-2xl mb-10 leading-relaxed font-normal"
                 >
                     Com Fluent Now, falar inglês se torna fácil e prático! Aprenda e pratique diariamente com o suporte de inteligência artificial.
                 </motion.p>
@@ -120,7 +120,7 @@ export default function Hero() {
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="group relative px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition-shadow"
+                            className="group relative px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition-shadow"
                         >
                             <motion.div
                                 className="absolute inset-0 bg-gradient-to-r from-orange-500 to-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -159,8 +159,8 @@ export default function Hero() {
                                 <span className="text-xl">🎯</span>
                             </div>
                             <div>
-                                <div className="text-sm font-bold text-gray-900">Prático</div>
-                                <div className="text-xs text-green-600">Aprenda rápido</div>
+                                <div className="text-sm font-semibold text-gray-900">Prático</div>
+                                <div className="text-xs text-green-600 font-medium">Aprenda rápido</div>
                             </div>
                         </div>
                     </motion.div>
@@ -182,8 +182,8 @@ export default function Hero() {
                                 <span className="text-xl">🤖</span>
                             </div>
                             <div>
-                                <div className="text-sm font-bold text-gray-900">IA Integrada</div>
-                                <div className="text-xs text-blue-600">Conversação real</div>
+                                <div className="text-sm font-semibold text-gray-900">IA Integrada</div>
+                                <div className="text-xs text-blue-600 font-medium">Conversação real</div>
                             </div>
                         </div>
                     </motion.div>
