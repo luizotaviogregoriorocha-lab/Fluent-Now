@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+// v1.0.1 - Inter font + Hero redesign
 import "./globals.css";
 import { UserProvider } from "@/context/UserContext";
 
