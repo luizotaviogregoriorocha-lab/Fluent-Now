@@ -71,7 +71,7 @@ export default function Hero() {
                         }}
                     >
                         <Image
-                            src="/logo-new.png"
+                            src="/logo-hero.png"
                             alt="Fluent Now Logo"
                             fill
                             className="object-contain drop-shadow-2xl"
