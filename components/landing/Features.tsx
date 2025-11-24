@@ -5,30 +5,30 @@ import { Brain, Mic, TrendingUp, Zap } from "lucide-react";
 
 const features = [
     {
-        title: "Smart SRS Algorithm",
-        description: "Forget forgetting. Our SuperMemo-2 engine schedules reviews at the perfect moment.",
-        icon: Brain,
-        color: "bg-purple-500/20 text-purple-400",
+        title: "AI Roleplay",
+        description: "Converse com a IA e desenvolva suas habilidades de fala em situações do dia a dia.",
+        icon: Mic,
+        color: "bg-yellow-500/20 text-yellow-400",
         colSpan: "col-span-1 md:col-span-2",
     },
     {
-        title: "AI Voice Roleplay",
-        description: "Practice real conversations. Speak, listen, and get instant feedback on your pronunciation.",
-        icon: Mic,
-        color: "bg-yellow-500/20 text-yellow-400",
+        title: "Gamificação",
+        description: "Aprenda de forma divertida! Economia de pontos, prêmios e desafios para manter você motivado.",
+        icon: Zap,
+        color: "bg-purple-500/20 text-purple-400",
         colSpan: "col-span-1",
     },
     {
-        title: "Real-time Progress",
-        description: "Track your fluency with detailed analytics, streaks, and XP.",
-        icon: TrendingUp,
+        title: "Cards para Revisão",
+        description: "Reforce seu conhecimento com cartões interativos que facilitam a revisão do que você aprendeu.",
+        icon: Brain,
         color: "bg-green-500/20 text-green-400",
         colSpan: "col-span-1",
     },
     {
-        title: "Instant Feedback",
-        description: "Know exactly what to improve with AI-powered error detection.",
-        icon: Zap,
+        title: "Aprenda Onde Quiser",
+        description: "Nossos recursos são projetados para se adaptar ao seu estilo de vida agitado. Aprenda onde e quando quiser!",
+        icon: TrendingUp,
         color: "bg-orange-500/20 text-orange-400",
         colSpan: "col-span-1 md:col-span-2",
     },
@@ -46,10 +46,10 @@ export default function Features() {
                         viewport={{ once: true }}
                         className="text-3xl md:text-5xl font-bold text-black mb-4"
                     >
-                        Everything you need to <span className="text-yellow-500">Fluent Now</span>
+                        Recursos Principais
                     </motion.h2>
                     <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-                        A complete ecosystem designed to take you from beginner to fluent, faster than ever.
+                        Fluent Now é ideal para quem tem pouco tempo! Aprenda em pequenas doses e veja resultados rápidos.
                     </p>
                 </div>
 

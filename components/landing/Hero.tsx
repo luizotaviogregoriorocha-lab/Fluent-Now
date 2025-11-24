@@ -22,12 +22,37 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     className="mb-8 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md"
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight"
                 >
-                    Master Languages <br />
+                    <Sparkles className="w-4 h-4 text-yellow-400" />
+                    <span className="text-sm font-medium text-gray-300">Fluent Now, seu inglês floresce aqui!</span>
+                </motion.div>
+
+                {/* Main Logo */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="mb-8 relative w-64 h-32 md:w-96 md:h-48"
+                >
+                    <Image
+                        src="/logo-full.png"
+                        alt="Fluent Now Logo"
+                        fill
+                        className="object-contain drop-shadow-[0_0_30px_rgba(255,215,0,0.3)] invert"
+                        priority
+                    />
+                </motion.div>
+
+                {/* Headline */}
+                <motion.h1
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight max-w-4xl"
+                >
+                    Você merece aprender inglês de forma{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
-                        With AI Precision
+                        prática e sem estresse
                     </span>
                 </motion.h1>
 
@@ -38,8 +63,7 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="text-lg md:text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed"
                 >
-                    Experience the next generation of fluency. Real-time AI roleplay,
-                    smart spaced repetition, and a personalized path to mastery.
+                    Com Fluent Now, falar inglês se torna fácil e prático! Aprenda e pratique diariamente com o suporte de inteligência artificial.
                 </motion.p>
 
                 {/* CTA Buttons */}
@@ -53,14 +77,14 @@ export default function Hero() {
                         <button className="group relative px-8 py-4 bg-white text-black font-bold rounded-full overflow-hidden transition-transform hover:scale-105 active:scale-95">
                             <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors">
-                                Start Learning Now <ArrowRight className="w-5 h-5" />
+                                Comece sua jornada! <ArrowRight className="w-5 h-5" />
                             </span>
                         </button>
                     </Link>
 
-                    <Link href="/demo.html">
+                    <Link href="#como-funciona">
                         <button className="px-8 py-4 bg-white/5 text-white font-medium rounded-full border border-white/10 hover:bg-white/10 transition-colors backdrop-blur-sm">
-                            View Demo
+                            Saiba Mais
                         </button>
                     </Link>
                 </motion.div>
@@ -73,11 +97,11 @@ export default function Hero() {
                 >
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
-                            <span className="text-xl">🇪🇸</span>
+                            <span className="text-xl">🎯</span>
                         </div>
                         <div>
-                            <div className="text-sm font-bold text-white">Spanish</div>
-                            <div className="text-xs text-green-400">+25 XP</div>
+                            <div className="text-sm font-bold text-white">Prático</div>
+                            <div className="text-xs text-green-400">Aprenda rápido</div>
                         </div>
                     </div>
                 </motion.div>
@@ -89,11 +113,11 @@ export default function Hero() {
                 >
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
-                            <span className="text-xl">🇫🇷</span>
+                            <span className="text-xl">🤖</span>
                         </div>
                         <div>
-                            <div className="text-sm font-bold text-white">French</div>
-                            <div className="text-xs text-blue-400">Mastered</div>
+                            <div className="text-sm font-bold text-white">IA Integrada</div>
+                            <div className="text-xs text-blue-400">Conversação real</div>
                         </div>
                     </div>
                 </motion.div>

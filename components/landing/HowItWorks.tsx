@@ -5,27 +5,30 @@ import { motion } from "framer-motion";
 const steps = [
     {
         num: "01",
-        title: "Set Your Goal",
-        desc: "Choose your focus: Travel, Business, or Casual conversation.",
+        title: "Baixe o App",
+        desc: "Disponível na App Store e Google Play. Comece em segundos!",
     },
     {
         num: "02",
-        title: "Practice Daily",
-        desc: "Spend 15 mins/day with AI roleplay and smart flashcards.",
+        title: "Crie sua Conta",
+        desc: "Cadastro rápido e fácil. Personalize seu perfil e objetivos.",
     },
     {
         num: "03",
-        title: "Master Fluency",
-        desc: "Watch your stats grow as you gain real-world confidence.",
+        title: "Comece a Praticar",
+        desc: "É simples assim! Aprenda no seu ritmo e veja resultados.",
     },
 ];
 
 export default function HowItWorks() {
     return (
-        <section className="py-24 bg-[#FFD700] text-black border-y border-black/5">
+        <section id="como-funciona" className="py-24 bg-[#FFD700] text-black border-y border-black/5">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">How it Works</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">Como Funciona</h2>
+                    <p className="text-black/70 text-lg max-w-2xl mx-auto font-medium">
+                        Não deixe que a falta de tempo seja um obstáculo. O Fluent Now se encaixa na sua rotina!
+                    </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto relative">
