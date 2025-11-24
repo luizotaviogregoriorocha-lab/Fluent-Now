@@ -44,7 +44,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="mb-8 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-400/10 border border-yellow-400/20 backdrop-blur-sm"
+                    className="mb-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-400/10 border border-yellow-400/20 backdrop-blur-sm"
                 >
                     <Sparkles className="w-4 h-4 text-yellow-600" />
                     <span className="text-sm font-medium text-gray-700">Fluent Now, seu inglês floresce aqui!</span>
@@ -60,7 +60,7 @@ export default function Hero() {
                         type: "spring",
                         stiffness: 100
                     }}
-                    className="mb-12"
+                    className="mb-6"
                 >
                     <motion.div
                         animate={{ y: [0, -10, 0] }}
