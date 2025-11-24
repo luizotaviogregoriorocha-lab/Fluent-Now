@@ -87,7 +87,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-2xl font-semibold tracking-tight text-center mb-4 text-black max-w-2xl"
+                    className="text-2xl font-semibold tracking-tight text-center mb-4 text-black"
                 >
                     Aprenda inglês no seu tempo: prático, divertido e guiado por IA.
                 </motion.h1>
@@ -97,29 +97,26 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className="text-sm text-center leading-relaxed mb-8 max-w-xs mx-auto"
-                    style={{ color: '#666666' }}
+                    className="text-sm text-center leading-relaxed mb-8 max-w-xs mx-auto text-[#666666]"
                 >
                     Complete um quiz rápido e desbloqueie 7 dias de acesso total ao Fluent Now — converse com agentes de IA, revise conteúdo e conquiste recompensas, mesmo com uma rotina corrida.
                 </motion.p>
 
-                {/* CTA Buttons with Hover Animations */}
+                {/* CTA Button */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
-                    className="flex flex-col sm:flex-row gap-4 w-full max-w-md mx-auto"
+                    className="flex justify-center w-full"
                 >
-                    <Link href="/onboarding" className="w-full">
+                    <Link href="/onboarding" className="w-full max-w-md">
                         <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="group relative w-full px-8 py-4 rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition-shadow font-medium"
-                            style={{ backgroundColor: '#FFD700', color: '#000000' }}
+                            whileHover={{ scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
+                            className="w-full px-8 py-4 bg-[#FFD700] text-black font-medium rounded-full shadow-lg hover:bg-[#F4C430] transition-colors flex items-center justify-center gap-2"
                         >
-                            <span className="relative z-10 flex items-center justify-center gap-2">
-                                Comece agora: faça o quiz e ative seu teste grátis <ArrowRight className="w-5 h-5" />
-                            </span>
+                            <span>Comece agora: faça o quiz e ative seu teste grátis</span>
+                            <ArrowRight className="w-5 h-5" />
                         </motion.button>
                     </Link>
                 </motion.div>
