@@ -32,7 +32,7 @@ const features = [
 
 export default function VisualFeatures() {
     return (
-        <section className="py-24 bg-zinc-950 relative overflow-hidden">
+        <section className="py-24 bg-black relative overflow-hidden">
             <div className="container mx-auto px-4">
 
                 <div className="text-center mb-16">
