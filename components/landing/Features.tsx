@@ -36,7 +36,7 @@ const features = [
 
 export default function Features() {
     return (
-        <section className="py-24 bg-black relative overflow-hidden">
+        <section className="py-24 bg-white relative overflow-hidden">
             <div className="container mx-auto px-4">
 
                 <div className="text-center mb-16">
@@ -44,11 +44,11 @@ export default function Features() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl md:text-5xl font-bold text-white mb-4"
+                        className="text-3xl md:text-5xl font-bold text-black mb-4"
                     >
-                        Everything you need to <span className="text-yellow-400">Fluent Now</span>
+                        Everything you need to <span className="text-yellow-500">Fluent Now</span>
                     </motion.h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto">
+                    <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                         A complete ecosystem designed to take you from beginner to fluent, faster than ever.
                     </p>
                 </div>
@@ -61,17 +61,17 @@ export default function Features() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className={`${feature.colSpan} group relative p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors overflow-hidden`}
+                            className={`${feature.colSpan} group relative p-8 rounded-3xl bg-gray-50 border border-gray-200 hover:border-yellow-400 transition-colors overflow-hidden shadow-lg hover:shadow-xl`}
                         >
                             <div className={`w-12 h-12 rounded-xl ${feature.color} flex items-center justify-center mb-6`}>
                                 <feature.icon className="w-6 h-6" />
                             </div>
 
-                            <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
-                            <p className="text-gray-400">{feature.description}</p>
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
+                            <p className="text-gray-600">{feature.description}</p>
 
                             {/* Hover Glow Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:animate-shimmer" />
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-100/20 to-transparent -translate-x-full group-hover:animate-shimmer" />
                         </motion.div>
                     ))}
                 </div>

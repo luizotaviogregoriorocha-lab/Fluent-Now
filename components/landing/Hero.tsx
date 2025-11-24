@@ -22,31 +22,6 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     className="mb-8 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md"
-                >
-                    <Sparkles className="w-4 h-4 text-yellow-400" />
-                    <span className="text-sm font-medium text-gray-300">The Future of Language Learning</span>
-                </motion.div>
-
-                {/* Main Logo */}
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="mb-8 relative w-64 h-32 md:w-96 md:h-48"
-                >
-                    <Image
-                        src="/logo-full.png"
-                        alt="Fluent Now Logo"
-                        fill
-                        className="object-contain drop-shadow-[0_0_30px_rgba(255,215,0,0.3)]"
-                        priority
-                    />
-                </motion.div>
-
-                {/* Headline */}
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight"
                 >
