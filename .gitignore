@@ -42,3 +42,4 @@ next-env.d.ts
 # Demo files (optional - remove if you want to keep them)
 *.html
 !app/**/*.html
+Fluent-Now/
