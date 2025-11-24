@@ -182,8 +182,8 @@ function ActionButton({ icon, label, href, primary = false }: { icon: React.Reac
     return (
         <Link href={href}>
             <div className={`w - full p - 5 rounded - 2xl flex items - center gap - 3 font - bold font - jumper - regular transition - all hover: translate - x - 1 ${primary
-                    ? "bg-gradient-to-br from-brand-yellow to-brand-orange text-black shadow-[0_4px_16px_rgba(255,215,0,0.3)] hover:shadow-[0_8px_24px_rgba(255,215,0,0.5)]"
-                    : "bg-white/5 border border-white/10 text-white hover:border-brand-yellow hover:shadow-[0_4px_16px_rgba(255,215,0,0.2)]"
+                ? "bg-gradient-to-br from-brand-yellow to-brand-orange text-black shadow-[0_4px_16px_rgba(255,215,0,0.3)] hover:shadow-[0_8px_24px_rgba(255,215,0,0.5)]"
+                : "bg-white/5 border border-white/10 text-white hover:border-brand-yellow hover:shadow-[0_4px_16px_rgba(255,215,0,0.2)]"
                 } `}>
                 {icon}
                 {label}
@@ -191,4 +191,3 @@ function ActionButton({ icon, label, href, primary = false }: { icon: React.Reac
         </Link>
     );
 }
-```
