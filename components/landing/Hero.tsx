@@ -60,7 +60,7 @@ export default function Hero() {
                         type: "spring",
                         stiffness: 100
                     }}
-                    className="mb-12 relative w-80 h-40 md:w-[500px] md:h-52"
+                    className="mb-12"
                 >
                     <motion.div
                         animate={{ y: [0, -10, 0] }}
@@ -73,9 +73,11 @@ export default function Hero() {
                         <Image
                             src="/logo-new.png"
                             alt="Fluent Now Logo"
-                            fill
-                            className="object-contain drop-shadow-2xl"
+                            width={500}
+                            height={200}
+                            className="drop-shadow-2xl"
                             priority
+                            unoptimized
                         />
                     </motion.div>
                 </motion.div>
