@@ -28,7 +28,7 @@ export default function CTA() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <Link href="/onboarding">
                             <button className="px-8 py-4 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-300 transition-colors text-lg">
-                                Baixar App
+                                Começar Agora
                             </button>
                         </Link>
                         <div className="flex gap-4">
